@@ -10,6 +10,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import LoraConfig
 from huggingface_hub import whoami
 import random
+from dotenv import load_dotenv
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_id', type=str, default='meta-llama/Llama-3.2-3B', help='Model ID')
 parser.add_argument('--data_path', type=str, default='/data/longfei/diversity_sft_dataset.json', help='Path to training data')
@@ -30,7 +31,9 @@ parser.add_argument('--resume_from_checkpoint', action='store_true', help='Resum
 parser.add_argument('--max_steps', type=int, default=10000, help='Max steps')
 args = parser.parse_args()
 
-user = whoami(token='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')
+# huggingface token
+load_dotenv()
+user = whoami(token=os.getenv('HF_TOKEN'))
 
 lora_config = LoraConfig(
     r=128,
