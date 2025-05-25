@@ -1,0 +1,192 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+venv/
+env/
+.virtualenv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.*
+*.cover
+*.py,cover
+hypothesis/
+.cache
+nosetests.xml
+coverage.xml
+*.mo
+*.pot
+test-reports/
+
+# MyPy
+.mypy_cache/
+
+# Pylint
+pylint.log
+
+# Pyre type checker
+.pyre/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Spyder
+.spyderproject/
+.spyderworkspace/
+
+# Rope
+.ropeproject
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# dotenv environment variables
+.env
+.venv
+env/
+env.bak/
+.envrc
+
+# Logs and debugging
+logs/
+*.log
+*.out
+*.err
+debug.log
+
+# Local database files
+*.sqlite3
+*.db
+
+# AWS credentials and config
+.aws/
+
+# Django specific
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+*.log
+local_settings.py
+
+# Flask specific
+instance/
+.webassets-cache
+
+# FastAPI
+*.db
+__pypackages__/
+
+# Ansible
+*.retry
+
+# Poetry
+poetry.lock
+
+# Data
+data/
+
+# Figures
+figs/
+
+# Word frequency
+word_freq/
+
+todo.md
+
+# Environment variables
+.env
+
+*.pkl
+
+wandb/
+
+*.txt
+eval/*.json
+eval/*.jsonl
+
+significant_layers/
+attention_drop/*.json
+out
+diverse_head/*.pdf
+diverse_head/*.png
+diverse_head/relative_pos
+eval/open_ended_text_generation/training_data/
+eval/open_ended_text_generation/eval_results/
+
+cluster/*.jsonl
+cluster/*.png
+cluster/*json
+cluster/metrics_llama_simple_steer.json
+
+structure_analysis/results/*.jsonl
+structure_analysis/results/*.json
+
+traditional_metrics/results/*.json
+traditional_metrics/results/*.jsonl
+
+reason/entropies_topk/*
+reason/figs_topk/*
+*.json
+human_evaluation/*.jsonl
+human_evaluation/*.json
+attention_shift/*.npy
+attention_shift/*.png
+attention_shift/*.pkl
+
+mechanistic_interpret/render
+*.html
+tmp.py
